@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-本项目记录一个基于 [PANNs 提供的 AudioSet 下载版本](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset)进行补全、音频质量检查、异常音频替换和清理的个人整理版本，共 **1,961,094 条 WAV**。使用 AudioSet v1 原始 527 类弱标签和 PANNs 目录结构，供 PANNs、HTS-AT 等音频分类工作流使用。
+本项目以 [PANNs 项目提供的 AudioSet 下载版本](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset)为基底，进行缺失音频补全、音频质量检查、异常音频替换和清理，共保留 **1,961,094 条 WAV**。数据集沿用该项目公开的 AudioSet 目录结构和 AudioSet v1 原始 527 类弱标签，可用于 HTS-AT 等音频分类工作流。
 
 这里的“优化”指音频覆盖补全和数据整理。该版本仍有缺失和弱标签不确定性；本项目不代表 Google、PANNs 或 HTS-AT 官方发布，也不宣称已经证明训练精度提升。
 
@@ -92,7 +92,7 @@ balanced 和 eval 各一个普通 ZIP；每个 unbalanced part 是一组 **split
 
 使用支持 `.z01/.z02/.zip` 分卷格式的解压软件，从该组 `.zip` 打开/解压。balanced/eval 压缩包内部已经包含各自目录；每个 unbalanced part 内部已经包含 `unbalanced_train_segments_partXX/` 目录。因此 balanced/eval 的解压目标是 `dataset_root/audios/`，每个 part 的目标是 `dataset_root/audios/unbalanced_train_segments/`，避免多套一层目录。普通 `unzip` 能列出目录并不保证能直接解压多卷 ZIP。
 
-完成解压并另行下载官方 CSV 后，PANNs 结构应为：
+完成解压并按下文下载官方 CSV 后，数据集应按 PANNs 项目公开的 AudioSet 数据集目录结构放置：
 
 ```text
 dataset_root/
