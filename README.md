@@ -2,7 +2,7 @@
 
 English | [简体中文](README.zh-CN.md)
 
-This project uses the [AudioSet download provided by the PANNs project](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset) as its base, followed by missing-audio recovery, audio-quality checks, replacement of defective recordings, and cleanup. It retains **1,961,094 WAV files**, follows the AudioSet dataset directory layout published by that project, and preserves the original AudioSet v1 527-class weak labels for audio-classification workflows such as HTS-AT.
+This project uses the [AudioSet download provided by the PANNs project](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset) as its base, followed by missing-audio recovery, audio-quality checks, replacement of defective recordings, and cleanup. It retains **1,961,094 WAV files**, follows the AudioSet dataset directory layout published by that project, and preserves the original AudioSet v1 527-class weak labels for audio-classification workflows.
 
 “Improvement” here means recovery and data curation. Missing recordings and weak-label uncertainty remain. This is an independent snapshot, not an official Google, PANNs, or HTS-AT release, and no training-accuracy improvement is claimed.
 
