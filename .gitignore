@@ -1,0 +1,18 @@
+# Audio and dataset packages stay in the external share.
+*.wav
+*.flac
+*.mp3
+*.h5
+*.hdf5
+*.zip
+*.z[0-9][0-9]
+*.tar
+*.gz
+*.pth
+*.ckpt
+.env
+.env.*
+*token*
+__pycache__/
+.review/
+
