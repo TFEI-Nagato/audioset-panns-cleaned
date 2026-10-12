@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-本项目以 [PANNs 项目提供的 AudioSet 下载版本](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset)为基底，进行缺失音频补全、音频质量检查、异常音频替换和清理，共保留 **1,961,094 条 WAV**。数据集沿用该项目公开的 AudioSet 目录结构和 AudioSet v1 原始 527 类弱标签，可用于 HTS-AT 等音频分类工作流。
+本项目以 [PANNs 项目提供的 AudioSet 下载版本](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset)为基底，进行缺失音频补全、音频质量检查、异常音频替换和清理，共保留 **1,961,094 条 WAV**。数据集沿用该项目公开的 AudioSet 目录结构和 AudioSet v1 原始 527 类弱标签，可用于音频分类工作流。
 
 这里的“优化”指音频覆盖补全和数据整理。该版本仍有缺失和弱标签不确定性；本项目不代表 Google、PANNs 或 HTS-AT 官方发布，也不宣称已经证明训练精度提升。
 
