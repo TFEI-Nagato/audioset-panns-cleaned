@@ -2,7 +2,7 @@
 
 English | [简体中文](README.zh-CN.md)
 
-This project documents a personal AudioSet snapshot derived from the [downloaded dataset provided by PANNs](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset), followed by missing-audio recovery, audio-quality checks, replacement of defective recordings, and cleanup. It contains **1,961,094 WAV files**, retains the original AudioSet v1 527-class weak labels, and follows the PANNs directory layout for PANNs/HTS-AT workflows.
+This project uses the [AudioSet download provided by the PANNs project](https://github.com/qiuqiangkong/audioset_tagging_cnn#1-download-dataset) as its base, followed by missing-audio recovery, audio-quality checks, replacement of defective recordings, and cleanup. It retains **1,961,094 WAV files**, follows the AudioSet dataset directory layout published by that project, and preserves the original AudioSet v1 527-class weak labels for audio-classification workflows such as HTS-AT.
 
 “Improvement” here means recovery and data curation. Missing recordings and weak-label uncertainty remain. This is an independent snapshot, not an official Google, PANNs, or HTS-AT release, and no training-accuracy improvement is claimed.
 
@@ -92,7 +92,7 @@ Balanced and evaluation data each use one ordinary ZIP. Each unbalanced part use
 
 Use extraction software supporting `.z01/.z02/.zip` volumes and open the group's `.zip` entry. Balanced/evaluation archives already contain their respective directory. Each unbalanced archive already contains `unbalanced_train_segments_partXX/`. Extract balanced/evaluation archives into `dataset_root/audios/` and unbalanced parts into `dataset_root/audios/unbalanced_train_segments/` to avoid an extra nested directory. Being able to list an archive with ordinary `unzip` does not imply support for extracting a multi-volume ZIP.
 
-After extraction and separate official metadata download, the PANNs layout is:
+After extraction and official CSV download as described below, arrange the dataset using the AudioSet dataset directory layout published by the PANNs project:
 
 ```text
 dataset_root/
